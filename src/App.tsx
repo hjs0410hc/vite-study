@@ -27,14 +27,23 @@ function App() {
 
   return (
     <>
-    <div className='w-full h-full flex items-center justify-center flex-col'>
+    <div className='w-full h-full bg-white rounded-lg shadow-lg flex items-center space-y-10 justify-center flex-col text-black'>
 
-      <div className='w-48 h-48 bg-red-500'>
-        <p className='text-2xl italic'>hello</p>
+      <div>
+        <p className='text-2xl'>안녕하세요</p>
+        <p className='text-3xl italic font-bold'>THXX</p>
+        <p>입니다</p>
       </div>
-      <button className='bg-blue-500 text-white p-2 rounded' onClick={handleClick}>
-        count is {count}
-      </button>
+      <div>
+        <p>화살표 키로 움직여 보세요</p>
+        <button className='bg-blue-500 text-white p-2 rounded' onClick={handleClick}>
+          count is {count}
+        </button>
+      </div>
+      <div>
+        <p>이 페이지는 10분만에 만들어 졌습니다.</p>
+        <p>React + Vite + Tailwind CSS</p>
+      </div>
     </div>
     </>
   )
